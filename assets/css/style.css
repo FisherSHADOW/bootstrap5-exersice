@@ -1,10 +1,8 @@
 :root{
-    --primary-color: #003049 ;
-    --secondary-color: #FCA311 ;
-    --third-color: #E5E5E5;
-    --forth-color:#e5383b;
-    --light-color: #f5f3f4;
-    --dark-color: #242423;
+    --primary-color: #1d1c2a ;
+    --secondary-color: #ff7b26 ;
+    --third-color: #ffefe7;
+    --light-color: #ffffff;
 }
 body{
     direction: rtl;
@@ -19,7 +17,7 @@ body{
     z-index: 9999;
 }
 #nav{
-    background-color: var(--light-color) !important ;
+    background-color: var(--third-color) !important ;
 }
 .navbar-expand-sm .navbar-nav{
     display: flex;
@@ -27,27 +25,72 @@ body{
     align-items: end;
     margin-top: 30px;
     color: #E5E5E5 !important;
-
     /* list-style: none;
     line-height: 50px;  */
 }
 #carousel-container{
-    margin-top: -11rem;
+    margin-top: -5rem;
 }
 #side-link{
     color: white !important;
 }
 
-@media (max-width: 576px) {
-    #sideBar{
-       display: none;
-    }
-    #carousel-container{
-        margin-top: 1rem;
-        margin-right: 0 !important;
-        width: 100% !important;
+#cardBox1:target{
+    transition: all ease-in-out 2s !important;
+}
+/* section2 */
+.section2{
+    background-color: #E5E5E5;
+}
+#pills-tab{
+    margin-top: 5rem;
+}
+#pills-pizza-tab:focus{
+    background-color: #ff7b26;
+    color: #E5E5E5;
+}
+#pills-pizza-tab:active{
+    background-color: #ff7b26 !important;
+    color: #E5E5E5;
+}
+
+#pills-pizza-tab{
+    background-color: transparent;
+    color: #ff7b26;
+    border-radius: 18px;
+    width: 80px;
+    transition: all ease-in-out 300ms;
     
-    }
+}
+#pills-burger-tab:focus{
+    background-color: #ff7b26;
+    color: #E5E5E5;
+}
+#pills-burger-tab:active{
+    background-color: #ff7b26 !important;
+    color: #E5E5E5;
+}
+
+#pills-burger-tab{
+    background-color: transparent;
+    color: #ff7b26;
+    border-radius: 18px;
+    width: 80px;
     
- 
+}
+#pills-pasta-tab:focus{
+    background-color: #ff7b26;
+    color: #E5E5E5;
+    
+}
+#pills-pasta-tab:active{
+    background-color: #ff7b26 !important;
+    color: #E5E5E5;
+}
+#pills-pasta-tab{
+    background-color: transparent;
+    color: #ff7b26;
+    border-radius: 18px;
+    width: 80px;
+    
 }

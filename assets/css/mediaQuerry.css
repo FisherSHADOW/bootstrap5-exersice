@@ -1,0 +1,11 @@
+@media (max-width: 576px) {
+    #sideBar{
+       display: none;
+    }
+    #carousel-container{
+        margin-top: 1rem;
+        margin-right: 0 !important;
+        width: 100% !important;
+    
+    }
+}
