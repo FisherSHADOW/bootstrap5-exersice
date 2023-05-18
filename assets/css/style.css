@@ -111,6 +111,7 @@ color: var(--primary-color);
 #pills-pizza-tab:hover{
     color: var(--light-color);
     transition: all ease-in-out 300ms;
+    transform: translateY(2px);
 }
 #pills-pizza-tab:focus{
     background-color: #ff7b26;
@@ -139,6 +140,8 @@ color: var(--primary-color);
 #pills-burger-tab:hover{
     color: var(--light-color);
     transition: all ease-in-out 300ms;
+    transform: translateY(2px);
+
 }
 #pills-pasta-tab:focus{
     background-color: #ff7b26;
@@ -159,6 +162,8 @@ color: var(--primary-color);
 #pills-pasta-tab:hover{
     color: var(--light-color);
     transition: all ease-in-out 300ms;
+    transform: translateY(2px);
+
 }
 
 .order-btn{
