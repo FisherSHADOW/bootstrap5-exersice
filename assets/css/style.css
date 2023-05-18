@@ -1,3 +1,11 @@
+@font-face {
+    font-family: xregular;
+    src: url(../fonts/IRANSansX-Regular.woff);
+}
+@font-face {
+    font-family: xBold;
+    src: url(../fonts/IRANSansX-Bold.woff);
+}
 :root{
     --primary-color: #1d1c2a ;
     --secondary-color: #ff7b26 ;
@@ -7,6 +15,7 @@
 body{
     direction: rtl;
     background-color: var(--primary-color);
+    font-family: xregular;
 }
 #sideBar{
     width: 20rem;
@@ -15,9 +24,43 @@ body{
     position: fixed;
     right:0;
     z-index: 9999;
+    
 }
 #nav{
     background-color: var(--third-color) !important ;
+}
+.navbar-brand{
+    font-family: xBold;
+    color: var(--secondary-color);
+    font-size: 40px;
+    border-bottom: 3px solid var(--primary-color);
+}
+.navbar-brand:hover{
+color: var(--primary-color);
+}
+.topBarLink{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary-color);
+    transition: all ease-in-out 300ms !important;
+}
+.topBarLink:hover{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    transition: all ease-in-out 300ms !important;
+    transform: translateY(2px);
+}
+.search-btn{
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    transition: all ease-in-out 300ms;
+}
+.search-btn:hover{
+    outline: auto var(--secondary-color) !important;
+    color: var(--primary-color);
+    background-color: var(--light-color);
+    transition: all ease-in-out 300ms;
 }
 .navbar-expand-sm .navbar-nav{
     display: flex;
@@ -32,18 +75,42 @@ body{
     margin-top: -5rem;
 }
 #side-link{
-    color: white !important;
+    color: var(--secondary-color);
+    font-size: 18px !important;
+    transition: all 300ms ease-in-out;
+}
+#side-link:hover{
+    color: var(--secondary-color);
+    transform: translateY(2px);
+    transition: all 300ms ease-in-out;
+    color: var(--third-color);
+
 }
 
-#cardBox1:target{
-    transition: all ease-in-out 2s !important;
+#cardBox1, #cardBox2, #cardBox3{
+    background-color: var(--primary-color) !important;
+    transition: all ease-in-out 300ms;
 }
+.div
+
 /* section2 */
 .section2{
-    background-color: #E5E5E5;
 }
 #pills-tab{
     margin-top: 5rem;
+}
+#pills-pizza-tab{
+    background-color: transparent;
+    color: #ff7b26;
+    border-radius: 20px;
+    width: 80px;
+    transition: all ease-in-out 300ms;
+    font-size: 22px !important;
+    margin-left: 20px ;
+}
+#pills-pizza-tab:hover{
+    color: var(--light-color);
+    transition: all ease-in-out 300ms;
 }
 #pills-pizza-tab:focus{
     background-color: #ff7b26;
@@ -53,15 +120,6 @@ body{
     background-color: #ff7b26 !important;
     color: #E5E5E5;
 }
-
-#pills-pizza-tab{
-    background-color: transparent;
-    color: #ff7b26;
-    border-radius: 18px;
-    width: 80px;
-    transition: all ease-in-out 300ms;
-    
-}
 #pills-burger-tab:focus{
     background-color: #ff7b26;
     color: #E5E5E5;
@@ -70,18 +128,21 @@ body{
     background-color: #ff7b26 !important;
     color: #E5E5E5;
 }
-
 #pills-burger-tab{
     background-color: transparent;
     color: #ff7b26;
-    border-radius: 18px;
+    border-radius: 20px;
     width: 80px;
-    
+    font-size: 22px !important;
+    margin-left: 20px;
+}
+#pills-burger-tab:hover{
+    color: var(--light-color);
+    transition: all ease-in-out 300ms;
 }
 #pills-pasta-tab:focus{
     background-color: #ff7b26;
     color: #E5E5E5;
-    
 }
 #pills-pasta-tab:active{
     background-color: #ff7b26 !important;
@@ -90,7 +151,51 @@ body{
 #pills-pasta-tab{
     background-color: transparent;
     color: #ff7b26;
+    border-radius: 20px;
+    width: 80px;   
+    font-size: 22px !important;
+    margin-left: 20px ;
+}
+#pills-pasta-tab:hover{
+    color: var(--light-color);
+    transition: all ease-in-out 300ms;
+}
+
+.order-btn{
+    background-color: var(--secondary-color);
     border-radius: 18px;
-    width: 80px;
-    
+}
+.order-btn:hover{
+    background-color:var(--secondary-color);
+    box-shadow: 3px 3px 10px black;
+    color: var(--third-color);
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--third-color);
+}
+.card{
+    background-color: var(--third-color);
+}
+.carousel-btn{
+    background-color: #ff7b26 !important; 
+}
+h1{
+    font-family: xregular;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+.h1-span{
+    color: var(--secondary-color);
+}
+.card-title{
+    color: var(--secondary-color) !important;
+    font-weight: bold;
+    border-bottom: solid 2px var(--primary-color);
+    line-height: 35px !important;
+
 }
